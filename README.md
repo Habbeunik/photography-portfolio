@@ -23,14 +23,14 @@ Tools like [create-react-app](https://github.com/facebook/create-react-app) have
 
 ## Development
 
-- `npm start`
+- `npm run dev`
   - Start the dev server at [http://localhost:3000](http://localhost:3000)
 - `npm test`
   - Start `jest` in watch mode
 
 ## Production
 
-- `npm run build && npm run start-prod`
+- `npm run build && npm start`
   - Bundle the JS and fire up the Express server for production
 - `npm run docker`
   - Build and start a local Docker image in production mode (mostly useful for debugging)

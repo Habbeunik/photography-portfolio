@@ -3,10 +3,10 @@
   "version": "2.12.0",
   "private": true,
   "scripts": {
-    "start": "node scripts/start.js",
+    "dev": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "start-prod": "node server/index.js",
+    "start": "node server/index.js",
     "precommit": "lint-staged",
     "lint": "eslint src/**/*.js",
     "format": "prettier --write \"src/**/*.{js,json,css,md}\"",
