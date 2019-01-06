@@ -3,6 +3,7 @@
   "version": "2.12.0",
   "private": true,
   "scripts": {
+    "storybook": "start-storybook -p 9001 -c .storybook",
     "dev": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
@@ -116,5 +117,8 @@
     "transformIgnorePatterns": [
       "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
     ]
+  },
+  "devDependencies": {
+    "@storybook/react": "^4.1.4"
   }
 }
