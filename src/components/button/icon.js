@@ -13,20 +13,16 @@ const RoundButton = styled.button`
   margin-bottom: 15px;
 `;
 
-class IconButton extends React.Component {
-  render() {
-    return <RoundButton>{this.props.icon}</RoundButton>;
-  }
+export default function IconButton({ icon }) {
+  return <RoundButton>{icon}</RoundButton>;
 }
-
-IconButton.displayName = 'IconButton';
 
 IconButton.propTypes = {
   icon: PropTypes.element.isRequired
 };
 
-// IconButton.defaultProps = {
-//   icon: () => <div>{null}</div>
-// };
-
-export default IconButton;
+IconButton.defaultProps = {
+  icon: function Icon() {
+    return <div>{null}</div>;
+  }
+};
