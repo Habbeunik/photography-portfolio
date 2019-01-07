@@ -1,13 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Button } from '@storybook/react/demo';
+import Button from '../components/button';
+import { Facebook, Instagram, Twitter } from 'react-feather';
 
 storiesOf('Button', module)
-  .add('with text', () => <Button>Hello Button</Button>)
-  .add('with some emoji', () => (
-    <Button>
-      <span role="img" aria-label="so cool">
-        😀 😎 👍 💯
-      </span>
-    </Button>
+  .add('Text Button', () => <Button title="Button" />)
+  .add('Icon button', () => (
+    <React.Fragment>
+      <Button icon={<Facebook />} isRound={true} />
+      <Button icon={<Twitter />} isRound={true} />
+      <Button icon={<Instagram />} isRound={true} />
+    </React.Fragment>
   ));
