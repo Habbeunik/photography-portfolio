@@ -1,7 +1,7 @@
 import url from 'url';
 import { matchPath } from 'react-router-dom';
 
-import { Home } from '../src/components/Home';
+import Home from '../src/pages/home';
 
 const ROUTES_THAT_FETCH_DATA = [
   {

@@ -5,8 +5,11 @@ import styled from 'styled-components';
 
 const StyledButton = styled(BaseButton)`
   padding: 12px;
-  width: 150px;
-  font-size: 14px;
+  width: 170px;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  height: fit-content;
+  font-family: San-Francisco-Regular;
 `;
 export default function Button(props) {
   const { title } = props;
@@ -19,7 +22,7 @@ export default function Button(props) {
 
 Button.propTypes = {
   title: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired
+  className: PropTypes.string
 };
 
 Button.defaultProps = {

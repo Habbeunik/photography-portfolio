@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 
 import * as metadata from './metadata';
 import Routes from './routes';
+import Header from './components/header';
 
 const App = () => (
   <div className="app">
@@ -13,6 +14,7 @@ const App = () => (
       script={metadata.script}
       noscript={metadata.noscript}
     />
+    <Header />
     <Routes />
     <footer />
   </div>
