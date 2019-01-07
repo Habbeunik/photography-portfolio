@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-
 import { createSession } from '../actions';
+import Button from './button';
+import { H1, Body, Subheading } from './typography';
 
 export class Home extends Component {
   static fetchData(store) {
@@ -14,7 +15,10 @@ export class Home extends Component {
   render() {
     return (
       <div>
-        <h1>Home page</h1>
+        <H1>Home page</H1>
+        <Body>Hey there i am the homepage</Body>
+        <Subheading>All part of the homepage</Subheading>
+        <Button title="Button" />
       </div>
     );
   }
