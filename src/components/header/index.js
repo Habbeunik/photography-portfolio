@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Nav from '../nav';
 import { Headline } from '../typography';
 import Button from '../button';
+import Headroom from 'react-headroom';
 
 const Container = styled.header`
   padding: 5px 6%;
@@ -24,17 +25,19 @@ const NavContainer = styled.div`
 
 export default function Header() {
   return (
-    <Container>
-      <Title>Photography Portfolio</Title>
-      <NavContainer>
-        <Nav
-          navLinks={[
-            { anchor: 'Works', path: '/gallery' },
-            { anchor: 'About', path: '/about' }
-          ]}
-        />
-        <Button title="Hire Me" />
-      </NavContainer>
-    </Container>
+    <Headroom>
+      <Container>
+        <Title>Photography Portfolio</Title>
+        <NavContainer>
+          <Nav
+            navLinks={[
+              { anchor: 'Works', path: '/gallery' },
+              { anchor: 'About', path: '/about' }
+            ]}
+          />
+          <Button title="Hire Me" />
+        </NavContainer>
+      </Container>
+    </Headroom>
   );
 }

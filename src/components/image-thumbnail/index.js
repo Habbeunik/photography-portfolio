@@ -8,6 +8,7 @@ const Thumbnail = styled.div`
   opacity: ${({ isActive }) => (isActive ? '1' : '0.6')};
   margin-left: 10px;
   display: inline-block;
+  overflow: hidden;
 `;
 const Image = styled.img`
   width: auto;

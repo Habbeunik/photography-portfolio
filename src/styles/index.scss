@@ -1,3 +1,7 @@
 @import './colors';
 @import './base';
 @import './typography';
+
+.body {
+  box-sizing: border-box;
+}
