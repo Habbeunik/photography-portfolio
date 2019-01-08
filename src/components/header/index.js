@@ -10,6 +10,7 @@ const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #ffffffd1;
 `;
 
 const Title = styled(Headline)`
