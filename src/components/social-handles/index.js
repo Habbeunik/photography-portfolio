@@ -9,12 +9,22 @@ const Container = styled.div`
   left: 8%;
 `;
 
+const FacebookIcon = styled(Facebook)`
+  fill: #3b5998;
+  color: #3b5998;
+`;
+
+const TwitterIcon = styled(Twitter)`
+  fill: #00aced;
+  color: #00aced;
+`;
+
 export default function SocialHanldes() {
   return (
     <Container>
-      <IconButton icon={<Facebook />} />
-      <IconButton icon={<Twitter />} />
-      <IconButton icon={<Instagram />} />
+      <IconButton icon={<FacebookIcon size={25} />} />
+      <IconButton icon={<TwitterIcon size={25} />} />
+      <IconButton icon={<Instagram size={30} />} />
     </Container>
   );
 }
