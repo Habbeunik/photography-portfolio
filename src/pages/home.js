@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <div className="body">
       <ImageBoard>
-        <ImageBoardImage src="https://images.pexels.com/photos/573294/pexels-photo-573294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+        <ImageBoardImage src="https://images.pexels.com/photos/219552/pexels-photo-219552.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
       </ImageBoard>
       <div
         style={{ display: 'flex', justifyContent: 'center', marginTop: '15px' }}
@@ -37,7 +37,7 @@ export default function Home() {
         <ImageThumbnail image="https://images.pexels.com/photos/356147/pexels-photo-356147.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
         <ImageThumbnail
           isActive={true}
-          image="https://images.pexels.com/photos/573294/pexels-photo-573294.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+          image="https://images.pexels.com/photos/219552/pexels-photo-219552.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
         />
         <ImageThumbnail image="https://images.pexels.com/photos/458381/pexels-photo-458381.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
       </div>

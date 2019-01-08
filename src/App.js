@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import * as metadata from './metadata';
 import Routes from './routes';
 import Header from './components/header';
+import SocialHanldes from './components/social-handles';
 
 const App = () => (
   <div className="app">
@@ -16,6 +17,7 @@ const App = () => (
     />
     <Header />
     <Routes />
+    <SocialHanldes />
     <footer />
   </div>
 );
