@@ -32,6 +32,7 @@ export default function Header() {
         <NavContainer>
           <Nav
             navLinks={[
+              { anchor: 'Home', path: '/' },
               { anchor: 'Works', path: '/gallery' },
               { anchor: 'About', path: '/about' }
             ]}
