@@ -114,7 +114,7 @@ export default function ImageModal(props) {
           role="button"
           onClick={onPrevious}
           onKeyPress={e => {
-            if (e.keyCode === 37) onPrevious();
+            if (e.keyCode == 37) onPrevious();
           }}
           tabIndex={0}
         >
