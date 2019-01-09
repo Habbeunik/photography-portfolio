@@ -14,7 +14,7 @@ const StyledButton = styled(BaseButton)`
 export default function Button(props) {
   const { title } = props;
   return (
-    <StyledButton bg={'#56CCF2'} borderRadius={'20px'} fontWeight={'100'}>
+    <StyledButton bg={'#567ff2'} borderRadius={'20px'} fontWeight={'100'}>
       {title}
     </StyledButton>
   );

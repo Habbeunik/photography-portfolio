@@ -10,6 +10,7 @@ const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #ffffffd1;
 `;
 
 const Title = styled(Headline)`
@@ -31,6 +32,7 @@ export default function Header() {
         <NavContainer>
           <Nav
             navLinks={[
+              { anchor: 'Home', path: '/' },
               { anchor: 'Works', path: '/gallery' },
               { anchor: 'About', path: '/about' }
             ]}

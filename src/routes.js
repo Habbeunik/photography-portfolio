@@ -9,12 +9,19 @@ const LoadableHome = Loadable({
   }
 });
 
+const LoadableGallery = Loadable({
+  loader: () => import(/* webpackChunkName: 'home' */ './pages/gallery'),
+  loading() {
+    return <div>Loading...</div>;
+  }
+});
+
 export default function Routes() {
   return (
     <div className="main">
       <Switch>
         <Route exact path="/" component={LoadableHome} />
-        {/* <Route path="/about" component={LoadableAbout} /> */}
+        <Route path="/gallery" component={LoadableGallery} />
       </Switch>
     </div>
   );
