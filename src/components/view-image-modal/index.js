@@ -131,7 +131,6 @@ export default function ImageModal(props) {
         }}
         onClick={onNext}
         onKeyDown={e => {
-          console.log('keycode', e.keyCode);
           if (e.keyCode === 39) onNext();
         }}
         role="button"
