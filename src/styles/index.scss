@@ -5,3 +5,21 @@
 .body {
   box-sizing: border-box;
 }
+
+.container {
+  padding: 0px 6%;
+  box-sizing: border-box;
+}
+
+.photo-container {
+  width: 32%;
+  height: auto;
+  max-height: 500px;
+  margin-right: 1%;
+  margin-top: 8px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
