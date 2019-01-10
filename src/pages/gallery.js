@@ -8,11 +8,47 @@ import { Switch, Route } from 'react-router-dom';
 export const photos = [
   {
     src:
+      'https://images.pexels.com/photos/1371176/pexels-photo-1371176.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+  },
+  {
+    src:
+      'https://images.pexels.com/photos/1389102/pexels-photo-1389102.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+  },
+  {
+    src:
+      'https://images.pexels.com/photos/1029929/pexels-photo-1029929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+  },
+  {
+    src:
+      'https://images.pexels.com/photos/1751196/pexels-photo-1751196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+  },
+  {
+    src:
+      'https://images.pexels.com/photos/1741235/pexels-photo-1741235.jpeg?cs=srgb&dl=adorable-animal-beagle-1741235.jpg&fm=jpg'
+  },
+  {
+    src:
+      'https://images.pexels.com/photos/67386/pexels-photo-67386.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+  },
+  {
+    src:
       'https://images.pexels.com/photos/219552/pexels-photo-219552.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
   },
   {
     src:
       'https://images.pexels.com/photos/1209843/pexels-photo-1209843.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'
+  },
+  {
+    src:
+      'https://images.pexels.com/photos/1038041/pexels-photo-1038041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+  },
+  {
+    src:
+      'https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg?cs=srgb&dl=adventure-beautiful-daylight-325807.jpg&fm=jpg'
+  },
+  {
+    src:
+      'https://images.pexels.com/photos/834872/pexels-photo-834872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
   },
   {
     src: 'https://source.unsplash.com/2ShvY8Lf6l0/800x599'
