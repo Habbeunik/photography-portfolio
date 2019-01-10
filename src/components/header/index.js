@@ -1,38 +1,19 @@
 import React from 'react';
-import styled from 'styled-components';
 import Nav from '../nav';
 import { Headline } from '../typography';
 import Button from '../button';
 import Headroom from 'react-headroom';
 import PropTypes from 'prop-types';
-
-const Container = styled.header`
-  padding: 5px 6%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #ffffffd1;
-`;
-
-const Title = styled(Headline)`
-  font-size: 1.8em;
-  color: #333;
-  margin: 0px;
-`;
-
-const NavContainer = styled.div`
-  display: flex;
-  align-items: center;
-`;
+import styles from './header.scss';
 
 export default function Header(props) {
   const { onHireMe } = props;
   return (
     <div style={{ position: 'relative', zIndex: '4' }}>
       <Headroom>
-        <Container>
-          <Title>Photography Portfolio</Title>
-          <NavContainer>
+        <div className={styles.container}>
+          <Headline className={styles.title}>Photography Portfolio</Headline>
+          <div className={styles.navContainer}>
             <Nav
               navLinks={[
                 { anchor: 'Home', path: '/' },
@@ -40,9 +21,9 @@ export default function Header(props) {
                 { anchor: 'About', path: '/about' }
               ]}
             />
-            <Button title="Hire Me" onClick={() => onHireMe()} />
-          </NavContainer>
-        </Container>
+            <Button title={'Hire Me'} onClick={() => onHireMe()} />
+          </div>
+        </div>
       </Headroom>
     </div>
   );
