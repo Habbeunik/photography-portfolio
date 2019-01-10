@@ -144,15 +144,15 @@
 }
 
 .introduction-title {
-  font-weight: 200;
-  color: white;
-  font-size: 5em;
-  font-family: 'San-Francisco-Light';
-  word-spacing: 15px;
-  text-shadow: 1px 2px #525050;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
+  font-weight: 200 !important;
+  color: white !important;
+  font-size: 5em !important;
+  font-family: 'San-Francisco-Light' !important;
+  word-spacing: 15px !important;
+  text-shadow: 1px 2px #525050 !important;
+  letter-spacing: 2px !important;
+  margin-bottom: 20px !important;
   span {
-    color: yellow;
+    color: yellow !important;
   }
 }
