@@ -23,9 +23,15 @@ const TwitterIcon = styled(Twitter)`
 export default function SocialHanldes() {
   return (
     <Container>
-      <IconButton icon={<FacebookIcon size={25} />} />
-      <IconButton icon={<TwitterIcon size={25} />} />
-      <IconButton icon={<Instagram size={30} />} />
+      <a href="https://www.facebook.com/ikumapayi.abbey" target="#">
+        <IconButton icon={<FacebookIcon size={25} />} />
+      </a>
+      <a href="https://www.twitter.com/habbeyunik" target="#">
+        <IconButton icon={<TwitterIcon size={25} />} />
+      </a>
+      <a href="https://www.instagram.com/evergreenfella/" target="#">
+        <IconButton icon={<Instagram size={30} />} />
+      </a>
     </Container>
   );
 }
