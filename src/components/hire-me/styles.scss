@@ -1,0 +1,52 @@
+.overlay {
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  height: 100%;
+  z-index: 15;
+  top: 0;
+  display: none;
+}
+
+.overlayIsActive {
+  display: block;
+}
+
+.content {
+  position: fixed;
+  width: 33%;
+  right: -103%;
+  height: 100%;
+  background: #ffffffdb;
+  z-index: 20;
+  top: 0px;
+  box-sizing: border-box;
+  padding: 4%;
+  padding-top: 35vh;
+  transition: all 300ms ease-out;
+}
+
+.contentIsActive {
+  right: 0;
+}
+
+.title {
+  color: #444343 !important;
+}
+
+.text {
+  font-size: 14px !important;
+  line-height: 25px !important;
+}
+
+.label {
+  color: #525151 !important;
+  margin-right: 5px;
+}
+
+.cancel {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  cursor: pointer;
+}

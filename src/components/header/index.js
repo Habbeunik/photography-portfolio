@@ -4,6 +4,7 @@ import Nav from '../nav';
 import { Headline } from '../typography';
 import Button from '../button';
 import Headroom from 'react-headroom';
+import PropTypes from 'prop-types';
 
 const Container = styled.header`
   padding: 5px 6%;
@@ -24,7 +25,8 @@ const NavContainer = styled.div`
   align-items: center;
 `;
 
-export default function Header() {
+export default function Header(props) {
+  const { onHireMe } = props;
   return (
     <div style={{ position: 'relative', zIndex: '4' }}>
       <Headroom>
@@ -38,10 +40,14 @@ export default function Header() {
                 { anchor: 'About', path: '/about' }
               ]}
             />
-            <Button title="Hire Me" />
+            <Button title="Hire Me" onClick={() => onHireMe()} />
           </NavContainer>
         </Container>
       </Headroom>
     </div>
   );
 }
+
+Header.propTypes = {
+  onHireMe: PropTypes.bool
+};

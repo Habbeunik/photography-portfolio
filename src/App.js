@@ -3,9 +3,9 @@ import Helmet from 'react-helmet';
 
 import * as metadata from './metadata';
 import Routes from './routes';
-import Header from './components/header';
+import Header from './containers/header';
 import SocialHanldes from './components/social-handles';
-
+import HireMe from './containers/hire-me';
 const App = () => (
   <div className="app">
     <Helmet
@@ -18,6 +18,7 @@ const App = () => (
     <Header />
     <Routes />
     <SocialHanldes />
+    <HireMe />
     <footer />
   </div>
 );

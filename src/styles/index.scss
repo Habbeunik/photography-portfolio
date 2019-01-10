@@ -65,14 +65,14 @@
 }
 
 .about-title {
-  text-align: center;
-  color: #444343;
+  text-align: center !important;
+  color: #444343 !important;
 }
 
 .about-text {
-  color: #525151;
-  font-size: 14px;
-  line-height: 25px;
+  color: #525151 !important;
+  font-size: 14px !important;
+  line-height: 25px !important;
 }
 
 .contact-linkContainer {

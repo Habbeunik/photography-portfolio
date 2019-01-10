@@ -12,9 +12,14 @@ const StyledButton = styled(BaseButton)`
   font-family: San-Francisco-Regular;
 `;
 export default function Button(props) {
-  const { title } = props;
+  const { title, onClick } = props;
   return (
-    <StyledButton bg={'#567ff2'} borderRadius={'20px'} fontWeight={'100'}>
+    <StyledButton
+      bg={'#567ff2'}
+      borderRadius={'20px'}
+      fontWeight={'100'}
+      onClick={onClick}
+    >
       {title}
     </StyledButton>
   );
@@ -22,7 +27,8 @@ export default function Button(props) {
 
 Button.propTypes = {
   title: PropTypes.string.isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
+  onClick: PropTypes.func
 };
 
 Button.defaultProps = {
