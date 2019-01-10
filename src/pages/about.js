@@ -28,16 +28,19 @@ export default function AboutPage() {
           <Body className="about-text">Email: habbeyunik@gmail.com</Body>
           <Body className="about-text">Social Media:</Body>
           <div className="contact-linkContainer">
-            <a href="https://www.facebook.com/kumapayi.abbey" target="#">
+            <a href="https://www.facebook.com/ikumapayi.abbey" target="#">
               <Body className="contact-link facebook">Facebook</Body>
             </a>
             <a href="https://www.twitter.com/habbeyunik" target="#">
               <Body className="contact-link twitter">Twitter</Body>
             </a>
-            <a href="https://www.linkedin.com/kumapayi.abbey" target="#">
+            <a
+              href="https://www.linkedin.com/in/kumapayi-abbey-45699b140/"
+              target="#"
+            >
               <Body className="contact-link linkedIn">LinkedIn</Body>
             </a>
-            <a href="https://www.instagram.com/evergreenfella" target="#">
+            <a href="https://www.instagram.com/evergreenfella/" target="#">
               <Body className="contact-link instagram">Instagram</Body>
             </a>
           </div>
