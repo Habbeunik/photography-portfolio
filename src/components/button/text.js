@@ -10,6 +10,8 @@ const StyledButton = styled(BaseButton)`
   font-size: 16px;
   height: fit-content;
   font-family: San-Francisco-Regular;
+  cursor: pointer;
+  outline: none;
 `;
 export default function Button(props) {
   const { title, onClick } = props;
