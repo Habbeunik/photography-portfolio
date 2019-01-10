@@ -10,7 +10,12 @@ const RoundButton = styled.button`
   align-items: center;
   justify-content: center;
   box-shadow: 2px 2px 4px #232222;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+  &:hover {
+    transform: scale(1.3, 1.3);
+  }
 `;
 
 export default function IconButton({ icon }) {

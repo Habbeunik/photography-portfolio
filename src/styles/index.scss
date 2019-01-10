@@ -117,3 +117,17 @@
     background: #d02149;
   }
 }
+.image-board {
+  width: 88%;
+  background: #ccc;
+  margin: 0px 6%;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  height: calc(100vh - 68px);
+  img {
+    max-width: 100%;
+  }
+}

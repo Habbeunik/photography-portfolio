@@ -1,21 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import ImageThumbnail from '../components/image-thumbnail';
-
-const ImageBoard = styled.div`
-  width: 88%;
-  height: 70vh;
-  background: #ccc;
-  margin: 0px 6%;
-  box-sizing: border-box;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-`;
+// import ImageThumbnail from '../components/image-thumbnail';
 
 const ImageBoardImage = styled.img`
   margin: auto;
-  height: 100%;
+  height: auto;
   width: auto;
   display: block;
 `;
@@ -23,10 +12,10 @@ const ImageBoardImage = styled.img`
 export default function Home() {
   return (
     <div className="body">
-      <ImageBoard>
+      <div className={'image-board'}>
         <ImageBoardImage src="https://images.pexels.com/photos/219552/pexels-photo-219552.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
-      </ImageBoard>
-      <div
+      </div>
+      {/* <div
         style={{ display: 'flex', justifyContent: 'center', marginTop: '15px' }}
       >
         <ImageThumbnail image="https://images.pexels.com/photos/1209843/pexels-photo-1209843.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
@@ -40,7 +29,7 @@ export default function Home() {
           image="https://images.pexels.com/photos/219552/pexels-photo-219552.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
         />
         <ImageThumbnail image="https://images.pexels.com/photos/458381/pexels-photo-458381.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
-      </div>
+      </div> */}
     </div>
   );
 }

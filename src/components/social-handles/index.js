@@ -7,6 +7,7 @@ const Container = styled.div`
   position: fixed;
   top: 30vh;
   left: 8%;
+  z-index: 4;
 `;
 
 const FacebookIcon = styled(Facebook)`

@@ -26,20 +26,22 @@ const NavContainer = styled.div`
 
 export default function Header() {
   return (
-    <Headroom>
-      <Container>
-        <Title>Photography Portfolio</Title>
-        <NavContainer>
-          <Nav
-            navLinks={[
-              { anchor: 'Home', path: '/' },
-              { anchor: 'Works', path: '/gallery' },
-              { anchor: 'About', path: '/about' }
-            ]}
-          />
-          <Button title="Hire Me" />
-        </NavContainer>
-      </Container>
-    </Headroom>
+    <div style={{ position: 'relative', zIndex: '4' }}>
+      <Headroom>
+        <Container>
+          <Title>Photography Portfolio</Title>
+          <NavContainer>
+            <Nav
+              navLinks={[
+                { anchor: 'Home', path: '/' },
+                { anchor: 'Works', path: '/gallery' },
+                { anchor: 'About', path: '/about' }
+              ]}
+            />
+            <Button title="Hire Me" />
+          </NavContainer>
+        </Container>
+      </Headroom>
+    </div>
   );
 }
