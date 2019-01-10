@@ -123,11 +123,36 @@
   margin: 0px 6%;
   box-sizing: border-box;
   overflow: hidden;
-  display: flex;
   justify-content: center;
   position: absolute;
   height: calc(100vh - 68px);
+  transition: all 300ms ease-out;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
   img {
     max-width: 100%;
+  }
+}
+
+.introduction-textContainer {
+  text-align: center;
+  padding: 20vh 1%;
+  letter-spacing: 4px;
+  padding-left: 3%;
+  color: white;
+}
+
+.introduction-title {
+  font-weight: 200;
+  color: white;
+  font-size: 5em;
+  font-family: 'San-Francisco-Light';
+  word-spacing: 15px;
+  text-shadow: 1px 2px #525050;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  span {
+    color: yellow;
   }
 }
