@@ -110,7 +110,8 @@ const Photo = props => (
     <Link to={`/gallery/${props.index}`}>
       <div className={'photo-overlay'} />
     </Link>
-    <ImageLoader image={props.src} />
+    <ImageLoader image={props.src} visibleByDefault={props.index < 7} />
+    {/*visible by default for first size images*/}
   </div>
 );
 

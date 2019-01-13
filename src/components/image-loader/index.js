@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 //image tag should be used as image props
-export default function ImageLoader({ image }) {
+export default function ImageLoader({ image, visibleByDefault }) {
   return (
     <LazyLoadImage
       alt={'alt'}
@@ -12,11 +12,13 @@ export default function ImageLoader({ image }) {
       src={image} // use normal <img> attributes as props
       //   width={300}
       effect="black-and-white"
-      threshold={40}
+      threshold={50}
+      visibleByDefault={visibleByDefault}
     />
   );
 }
 
 ImageLoader.propTypes = {
-  image: PropTypes.string
+  image: PropTypes.string,
+  visibleByDefault: PropTypes.bool
 };
