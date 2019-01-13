@@ -22,6 +22,10 @@ export const link = [
   {
     rel: 'shortcut icon',
     href: `${process.env.PUBLIC_URL}/favicon.ico?v1`
+  },
+  {
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css?family=Sacramento'
   }
 ];
 
