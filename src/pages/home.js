@@ -4,14 +4,14 @@ import { H3, Subheading } from '../components/typography';
 export default class Home extends React.Component {
   state = {
     images: [
-      'https://images.pexels.com/photos/1371176/pexels-photo-1371176.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-      'https://images.pexels.com/photos/1389102/pexels-photo-1389102.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-      'https://images.pexels.com/photos/1029929/pexels-photo-1029929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-      'https://images.pexels.com/photos/1751196/pexels-photo-1751196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-      'https://images.pexels.com/photos/1741235/pexels-photo-1741235.jpeg?cs=srgb&dl=adorable-animal-beagle-1741235.jpg&fm=jpg',
-      'https://images.pexels.com/photos/67386/pexels-photo-67386.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-      'https://images.pexels.com/photos/1038041/pexels-photo-1038041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-      'https://images.pexels.com/photos/1340502/pexels-photo-1340502.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      'https://images.pexels.com/photos/1162540/pexels-photo-1162540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      'https://images.pexels.com/photos/1760962/pexels-photo-1760962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      'https://images.pexels.com/photos/1684915/pexels-photo-1684915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      'https://images.pexels.com/photos/683241/pexels-photo-683241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      'https://images.pexels.com/photos/1777792/pexels-photo-1777792.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      'https://images.pexels.com/photos/1154198/pexels-photo-1154198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      'https://images.pexels.com/photos/1750565/pexels-photo-1750565.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      'https://images.pexels.com/photos/1362478/pexels-photo-1362478.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
       'https://images.pexels.com/photos/834872/pexels-photo-834872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       'https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg?cs=srgb&dl=adventure-beautiful-daylight-325807.jpg&fm=jpg'
     ],
