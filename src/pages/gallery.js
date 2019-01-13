@@ -4,8 +4,41 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import ImageModal from '../components/view-image-modal';
 import { Switch, Route } from 'react-router-dom';
+import ImageLoader from '../components/image-loader';
 
 export const photos = [
+  {
+    src:
+      'https://images.pexels.com/photos/1162540/pexels-photo-1162540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+  },
+  {
+    src:
+      'https://images.pexels.com/photos/1760962/pexels-photo-1760962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+  },
+  {
+    src:
+      'https://images.pexels.com/photos/1684915/pexels-photo-1684915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+  },
+  {
+    src:
+      'https://images.pexels.com/photos/683241/pexels-photo-683241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+  },
+  {
+    src:
+      'https://images.pexels.com/photos/1777792/pexels-photo-1777792.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+  },
+  {
+    src:
+      'https://images.pexels.com/photos/1154198/pexels-photo-1154198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+  },
+  {
+    src:
+      'https://images.pexels.com/photos/1750565/pexels-photo-1750565.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+  },
+  {
+    src:
+      'https://images.pexels.com/photos/1362478/pexels-photo-1362478.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+  },
   {
     src:
       'https://images.pexels.com/photos/1371176/pexels-photo-1371176.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
@@ -109,7 +142,8 @@ const Photo = props => (
     <Link to={`/gallery/${props.index}`}>
       <div className={'photo-overlay'} />
     </Link>
-    <img src={props.src} alt={props.src} />
+    <ImageLoader image={props.src} visibleByDefault={props.index < 7} />
+    {/*visible by default for first size images*/}
   </div>
 );
 
