@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import ImageModal from '../components/view-image-modal';
 import { Switch, Route } from 'react-router-dom';
+import ImageLoader from '../components/image-loader';
 
 export const photos = [
   {
@@ -109,7 +110,7 @@ const Photo = props => (
     <Link to={`/gallery/${props.index}`}>
       <div className={'photo-overlay'} />
     </Link>
-    <img src={props.src} alt={props.src} />
+    <ImageLoader image={props.src} />
   </div>
 );
 
