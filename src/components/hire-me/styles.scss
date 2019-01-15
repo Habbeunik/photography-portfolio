@@ -17,13 +17,22 @@
   width: 33%;
   right: -103%;
   height: 100%;
-  background: #ffffffdb;
+  background: #fffffff0;
   z-index: 20;
   top: 0px;
   box-sizing: border-box;
   padding: 4%;
   padding-top: 35vh;
   transition: all 300ms ease-out;
+  @media (max-width: 950px) {
+    width: 40%;
+  }
+  @media (max-width: 750px) {
+    width: 50%;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 }
 
 .contentIsActive {

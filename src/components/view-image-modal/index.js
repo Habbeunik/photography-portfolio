@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { ChevronLeft, ChevronRight } from 'react-feather';
 import { photos } from '../../pages/gallery';
 import viewport from '../../utils/viewport';
+import styles from './modal.scss';
 
 const mobileBreakPoint = 500;
 
@@ -13,7 +14,7 @@ const getModalContentStyle = windowWidth => {
   if (windowWidth <= mobileBreakPoint) {
     return {
       width: '90%',
-      height: '90vh',
+      height: '80vh',
       top: '10vh',
       zIndex: 5,
       overflow: 'visible',
@@ -66,7 +67,7 @@ export default class ImageModal extends React.Component {
           }}
         >
           <img
-            style={{ width: 'auto', height: ' 100%' }}
+            className={styles.modalImg}
             src={photos[image].src}
             alt={image}
           />
