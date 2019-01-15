@@ -28,4 +28,12 @@
   font-weight: 100;
   color: white;
   border: 0px;
+  @media (max-width: 960px) {
+    width: 120px;
+    padding: 10px;
+  }
+  @media (max-width: 270px) {
+    width: auto;
+    font-size: 12px;
+  }
 }

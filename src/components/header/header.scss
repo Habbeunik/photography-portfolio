@@ -5,15 +5,35 @@
   align-items: center;
   background: #ffffffd1;
   height: 68px;
+  flex-wrap: wrap;
+  @media (max-width: 960px) {
+    padding: 5px 1%;
+  }
+  @media (max-width: 710px) {
+    height: auto;
+  }
 }
 
 .title {
-  font-size: 1.8em;
-  color: #333;
+  font-size: 2.2em;
+  color: #585757eb;
   margin: 0px;
+  font-family: 'Sacramento', cursive !important;
+  @media (max-width: 710px) {
+    line-height: 62px;
+    width: 100%;
+    text-align: center;
+  }
+  @media (max-width: 270px) {
+    font-size: 1.6em;
+  }
 }
 
 .navContainer {
   display: flex;
   align-items: center;
+  @media (max-width: 710px) {
+    width: 100%;
+    padding: 0px 4%;
+  }
 }

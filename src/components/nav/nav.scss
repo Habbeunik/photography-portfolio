@@ -3,6 +3,12 @@
   font-family: San-Francisco-Regular;
   text-decoration: none;
   font-size: 16px;
+  @media (max-width: 960px) {
+    font-size: 14px;
+  }
+  @media (max-width: 270px) {
+    font-size: 12px;
+  }
 }
 
 .container {
@@ -13,4 +19,16 @@
   align-items: center;
   height: fit-content;
   margin-bottom: 0px;
+  @media (max-width: 960px) {
+    min-width: 200px;
+  }
+  @media (max-width: 710px) {
+    min-width: calc(80% - 124px);
+    justify-content: space-between;
+    padding-right: 17%;
+  }
+  @media (max-width: 450px) {
+    min-width: 56%;
+    padding-right: 6%;
+  }
 }
