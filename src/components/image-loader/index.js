@@ -11,7 +11,7 @@ export default function ImageLoader({ image, visibleByDefault }) {
       //   height={300}
       src={image} // use normal <img> attributes as props
       //   width={300}
-      effect="black-and-white"
+      effect="blur"
       threshold={50}
       visibleByDefault={visibleByDefault}
     />
