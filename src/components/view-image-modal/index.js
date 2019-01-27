@@ -45,7 +45,6 @@ export default class ImageModal extends React.Component {
   }
   render() {
     const { image, onClose, isOpen, onNext, onPrevious } = this.props;
-    console.log('modal content style', this.state.modalContentStyle);
     return (
       <Modal
         isOpen={isOpen}
